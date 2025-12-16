@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>脆皮大学生跨年邀请</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入参考代码的字体（保持样式一致） -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title">脆皮大学生向你发起了跨年邀请函</div>
+    <div class="sub-title">希望可以批准</div>
+
+    <div class="face-container">
+        <div class="emoji emoji--yay" id="emoji">
+            <div class="emoji__face">
+                <!-- Yay表情结构 -->
+                <div class="emoji__eyebrows"></div>
+                <div class="emoji__eyes"></div>
+                <div class="emoji__mouth"></div>
+                
+                <!-- Haha表情专属结构（舌头嵌套在嘴巴内） -->
+                <div class="emoji__mouth--haha">
+                    <div class="emoji__tongue--haha"></div>
+                </div>
+                
+                <!-- Sad表情结构 -->
+                <div class="emoji__eyebrows--sad"></div>
+                <div class="emoji__eyes--sad"></div>
+                <div class="emoji__mouth--sad"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 重构按钮组结构，适配视差样式 -->
+    <div class="button-group">
+        <!-- 接受按钮：保留文字/颜色，替换为参考样式 -->
+        <a href="javascript:void(0)" class="button" id="agree-btn-wrap">
+            <span class="parallax">
+                <span class="trigger uno"></span>
+                <span class="trigger dos"></span>
+                <span class="trigger tres"></span>
+                <span class="trigger cuatro"></span>
+                <span class="trigger cinco"></span>
+                <span class="trigger seis"></span>
+                <span class="trigger siete"></span>
+                <span class="trigger ocho"></span>
+                <span class="btn" id="agree-btn">接受</span>
+            </span>
+        </a>
+
+        <!-- 拒绝按钮：保留文字/颜色，替换为参考样式 -->
+        <a href="javascript:void(0)" class="button" id="refuse-btn-wrap">
+            <span class="parallax">
+                <span class="trigger uno"></span>
+                <span class="trigger dos"></span>
+                <span class="trigger tres"></span>
+                <span class="trigger cuatro"></span>
+                <span class="trigger cinco"></span>
+                <span class="trigger seis"></span>
+                <span class="trigger siete"></span>
+                <span class="trigger ocho"></span>
+                <span class="btn refuse-btn" id="refuse-btn">拒绝</span>
+            </span>
+        </a>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <p>一起跨年啦！🎉</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
